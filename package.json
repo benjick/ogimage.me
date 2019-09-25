@@ -1,0 +1,24 @@
+{
+  "name": "metaimage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "apicache": "^1.5.2",
+    "capture-website": "^0.4.0",
+    "cross-env": "^6.0.0",
+    "express": "^4.17.1",
+    "is-url": "^1.2.4",
+    "next": "^9.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}

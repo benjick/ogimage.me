@@ -1,0 +1,9 @@
+ogimage:
+  build: .
+  ports:
+    - "3008:3000"
+  environment:
+    - VIRTUAL_HOST=www.ogimage.me,ogimage.me
+    - VIRTUAL_PORT=3000
+    - LETSENCRYPT_HOST=www.ogimage.me,ogimage.me
+    - LETSENCRYPT_EMAIL=benjick@dumfan.net
