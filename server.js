@@ -27,6 +27,7 @@ app.prepare().then(() => {
       hideElements: [
         '.hide-for-ogimage'
       ],
+      userAgent: 'ogimage.me api v1',
       launchOptions: {
         args: ['--no-sandbox', '--disable-setuid-sandbox']
       }
