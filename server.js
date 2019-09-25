@@ -24,6 +24,9 @@ app.prepare().then(() => {
       width: 1200,
       height: 628,
       scaleFactor: 1,
+      hideElements: [
+        '.hide-for-ogimage'
+      ],
       launchOptions: {
         args: ['--no-sandbox', '--disable-setuid-sandbox']
       }
