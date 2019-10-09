@@ -24,7 +24,7 @@ export default () => {
       <Container>
         <h1>ogimage.me</h1>
         <p>
-          Generate images for you meta tags on the fly
+          Generate images for your meta tags on the fly
         </p>
         </Container>
       </Jumbotron>
