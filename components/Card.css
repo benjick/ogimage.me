@@ -1,0 +1,64 @@
+.card {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+  margin: 0 -20px;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.card-image {
+  border: 1px solid #dadde1;
+  position: relative;
+  padding-bottom: 52.333333333333336%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-text {
+  border: 1px solid #dadde1;
+  border-top: none;
+  padding: 10px 12px;
+  color: #1d2129;
+  border-bottom: 1px solid #dadde1;
+  background: #f2f3f5;
+}
+
+.card-domain {
+  border-collapse: separate;
+  color: #606770;
+  direction: ltr;
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 11px;
+  line-height: 11px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  user-select: none;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.card-title {
+  color: #1d2129;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #606770;
+}
