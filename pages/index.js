@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -20,11 +21,30 @@ export default () => {
   const imageLink = `https://ogimage.me/api/v1/${link}`
   return (
     <div>
+      <Head>
+        <title>OG Image - generate meta images on the fly</title>
+        <meta name="title" content="OG Image - generate meta images on the fly" />
+        <meta name="description" content="With ogimage you can generate meta images based on your current site" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="OG Image - generate meta images on the fly" />
+        <meta property="og:description" content="With ogimage you can generate meta images based on your current site" />
+        <meta property="og:image" content="https://ogimage.me/api/v1/https://ogimage.me" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://ogimage.me/" />
+        <meta property="twitter:title" content="OG Image - generate meta images on the fly" />
+        <meta property="twitter:description" content="With ogimage you can generate meta images based on your current site" />
+        <meta property="twitter:image" content="https://ogimage.me/api/v1/https://ogimage.me" />
+
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Jumbotron>
       <Container>
         <h1>ogimage.me</h1>
         <p>
-          Generate images for your meta tags on the fly
+          generate meta images on the fly
         </p>
         </Container>
       </Jumbotron>
