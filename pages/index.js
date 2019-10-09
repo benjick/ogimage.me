@@ -16,7 +16,7 @@ const getDomain = url => {
 }
 
 export default () => {
-  const [link, setLink] = React.useState('http://ogimage.me')
+  const [link, setLink] = React.useState('https://ogimage.me')
   const imageLink = `https://ogimage.me/api/v1/${link}`
   return (
     <div>
