@@ -2,11 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import './Card.css'
 
-const getDomain = url => {
-  const matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
-  return matches && matches[1]
-}
-
 export default ({image, domain}) => {
   return (
     <div className="card">

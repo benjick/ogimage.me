@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from '../components/Card'
 
 const getDomain = url => {
-  const matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
+  const matches = ('https://' + url).match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i)
   return matches && matches[1]
 }
 
