@@ -14,10 +14,11 @@ app.prepare().then(() => {
   const server = express()
 
   server.get('/api/v1/:url*', cache('120 minutes'), async (req, res) => {
-    const full = req.params.url + req.params[0]
+    let full = req.params.url + req.params[0]
+    full = full.includes('://') ? 'https://' + full : full;
     console.log('Cache miss:', full)
     if (!isUrl(full)) {
-      res.status('500').send('Not an URL')
+      res.status('500').send('Not an URL: ' + full)
       throw new Error('Not an URL')
     }
     const imagebuffer = await captureWebsite.buffer(full, {

@@ -17,7 +17,7 @@ const getDomain = url => {
 }
 
 export default () => {
-  const [link, setLink] = React.useState('https://ogimage.me')
+  const [link, setLink] = React.useState('ogimage.me')
   const imageLink = `https://ogimage.me/api/v1/${link}`
   return (
     <div>
@@ -30,13 +30,13 @@ export default () => {
         <meta property="og:url" content="https://metatags.io/" />
         <meta property="og:title" content="OG Image - generate meta images on the fly" />
         <meta property="og:description" content="With ogimage you can generate meta images based on your current site" />
-        <meta property="og:image" content="https://ogimage.me/api/v1/https://ogimage.me" />
+        <meta property="og:image" content="https://ogimage.me/api/v1/ogimage.me" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://ogimage.me/" />
         <meta property="twitter:title" content="OG Image - generate meta images on the fly" />
         <meta property="twitter:description" content="With ogimage you can generate meta images based on your current site" />
-        <meta property="twitter:image" content="https://ogimage.me/api/v1/https://ogimage.me" />
+        <meta property="twitter:image" content="https://ogimage.me/api/v1/ogimage.me" />
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
@@ -52,7 +52,7 @@ export default () => {
         <Row>
           <Col md={7}>
             <Form.Group controlId="formBasicEmail">
-              <Form.Control placeholder="Page URL" value={link} onChange={e => setLink(e.target.value)} />
+              <Form.Control placeholder="Page URL" value={link} onChange={e => setLink(e.target.value.replace(/^https?:\/\//,''))} />
               <Form.Text className="text-muted">
                 Enter the URL you wish to capture
               </Form.Text>
