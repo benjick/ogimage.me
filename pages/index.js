@@ -27,7 +27,7 @@ export default () => {
         <meta name="description" content="With ogimage you can generate meta images based on your current site" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://ogimage.me/" />
         <meta property="og:title" content="OG Image - generate meta images on the fly" />
         <meta property="og:description" content="With ogimage you can generate meta images based on your current site" />
         <meta property="og:image" content="https://ogimage.me/api/v1/ogimage.me" />
