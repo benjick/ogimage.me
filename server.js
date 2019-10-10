@@ -14,8 +14,7 @@ app.prepare().then(() => {
   const server = express()
 
   server.get('/api/v1/:url*', cache('120 minutes'), async (req, res) => {
-    let full = req.params.url + req.params[0]
-    full = full.includes('://') ? 'https://' + full : full;
+    let full = 'https://' + req.params.url + req.params[0]
     console.log('Cache miss:', full)
     if (!isUrl(full)) {
       res.status('500').send('Not an URL: ' + full)
