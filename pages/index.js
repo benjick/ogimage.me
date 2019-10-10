@@ -61,8 +61,8 @@ export default () => {
               <code style={{ display: 'block', fontSize: '0.7em' }}>&lt;meta property="og:image" content="{ imageLink }"&gt;</code>
               <code style={{ display: 'block', fontSize: '0.7em' }}>&lt;meta property="twitter:image" content="{ imageLink }"&gt;</code>
             </div>
-            <Alert variant="info">
-              Elements with the class <code>hide-for-ogimage</code> won't be rendered
+            <Alert variant="info" className="hide-for-ogimage" style={{marginTop: 20}}>
+              <strong>Tip!</strong> Elements with the class <code>hide-for-ogimage</code> won't be rendered, see preview on the right!
             </Alert>
           </Col>
           <Col md={5}>
